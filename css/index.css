@@ -138,6 +138,17 @@ body {
 .link-border {
   border: 2px solid #fff;
 }
+.fancy-image-border {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #977666;
+  overflow: visible;
+  z-index: -1;
+}
 h1,
 h2,
 h3,
@@ -209,5 +220,50 @@ header a {
   border: 2px solid #fff;
 }
 section {
-  padding: 4rem 0;
+  padding: 6rem 0;
+}
+.intro .img-container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.intro .img-container:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #977666;
+  overflow: visible;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .intro .img-container {
+    max-width: 50%;
+    margin: 0;
+  }
+}
+.intro img {
+  width: 100%;
+}
+.intro .title {
+  padding: 5rem 2rem;
+  background-color: #838C97;
+  color: #fefefe;
+}
+.intro .title h1 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .intro .title {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
 }

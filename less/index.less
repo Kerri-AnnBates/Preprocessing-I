@@ -159,6 +159,18 @@ body {
 	border: 2px solid #fff;
 }
 
+.fancy-image-border {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 100%;
+	width: 100%;
+	border: 3px solid @border-color;
+	overflow: visible;
+	z-index: -1;
+}
+
 h1,
 h2,
 h3,
@@ -197,6 +209,7 @@ a {
 	@media (min-width: 768px) {
 		width: 90%;
 	}
+
 	@media (min-width: 960px) {
 		width: 80%;
 	}
@@ -212,6 +225,7 @@ header {
 
 		li {
 			margin-bottom: 20px;
+
 			@media (min-width: 768px) {
 				margin-bottom: 0;
 			}
@@ -220,9 +234,13 @@ header {
 		@media (min-width: 768px) {
 			display: flex;
 			justify-content: space-evenly;
-		} // End 768px breakpoint
+		}
 
-	} // End .main-navigation
+		// End 768px breakpoint
+
+	}
+
+	// End .main-navigation
 
 	a {
 		font-size: 1.6rem;
@@ -232,9 +250,52 @@ header {
 		text-align: center;
 		width: 100%;
 		.link-border();
-	} // End anchor
-} // End header
+	}
+
+	// End anchor
+}
+
+// End header
 
 section {
-	padding: 4rem 0;
+	padding: 6rem 0;
+}
+
+.intro {
+	.img-container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto 3rem;
+
+		&:after {
+			.fancy-image-border();
+		} // End after.
+		
+		@media (min-width: 768px) {
+			max-width: 50%;
+			margin: 0;
+		} // End img-container @media
+	} //End .img-container.
+	img {
+		width: 100%;		
+	}
+	.title {
+		padding: 5rem 2rem;
+		background-color: @secondary-color;
+		color: #fefefe;
+
+		h1 {
+			margin-bottom: 1rem;
+		}
+
+		@media (min-width: 768px) {
+			width: 100%;
+		} // End .title @media
+	}
+
+	@media (min-width: 768px) {
+		    display: flex;
+		    position: relative;
+		    align-items: center;
+	} // End .intro @media
 }
