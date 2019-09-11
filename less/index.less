@@ -231,6 +231,7 @@ header {
 
 		li {
 			margin-bottom: 20px;
+			width: 20%;
 
 			@media (min-width: 768px) {
 				margin-bottom: 0;
@@ -251,6 +252,12 @@ header {
 		text-align: center;
 		width: 100%;
 		.link-border();
+		transition: all 0.5s;
+
+		&:hover {
+			background-color: #fff;
+			color: @main-border-color;
+		}
 	} // End anchor
 } // End header
 
@@ -264,7 +271,7 @@ section {
 
 .intro {
 	.img-container {
-		width: 100%;
+		width: 80%;
 		position: relative;
 		margin: 0 auto 3rem;
 
@@ -273,7 +280,7 @@ section {
 		} // End after.
 		
 		@media (min-width: 768px) {
-			max-width: 50%;
+			max-width: 40%;
 			margin: 0;
 		} // End img-container @media
 	} //End .img-container.
@@ -288,7 +295,7 @@ section {
 		color: #fefefe;
 
 		@media (min-width: 768px) {
-			width: 100%;
+			width: 50%;
 		} // End .title @media
 	} // End of .title
 
