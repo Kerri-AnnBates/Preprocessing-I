@@ -167,6 +167,16 @@ a {
   width: 100%;
   padding: 0 2rem;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 80%;
+  }
+}
 header {
   background: #414A54;
   padding: 2rem 0;
@@ -197,4 +207,7 @@ header a {
   text-align: center;
   width: 100%;
   border: 2px solid #fff;
+}
+section {
+  padding: 4rem 0;
 }

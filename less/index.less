@@ -193,6 +193,13 @@ a {
 	margin: auto;
 	width: 100%;
 	padding: 0 2rem;
+
+	@media (min-width: 768px) {
+		width: 90%;
+	}
+	@media (min-width: 960px) {
+		width: 80%;
+	}
 }
 
 header {
@@ -227,3 +234,7 @@ header {
 		.link-border();
 	} // End anchor
 } // End header
+
+section {
+	padding: 4rem 0;
+}
