@@ -154,6 +154,7 @@ body {
 @font-color: #565657;
 @img-border-color: #977666;
 @main-border-color: #838C97;
+@section-color: #DCDFE5;
 
 // Mixins
 .link-border {
@@ -202,6 +203,10 @@ h3 {
 
 a {
 	text-decoration: none;
+}
+
+table {
+	width: 100%;
 }
 
 .container {
@@ -253,6 +258,10 @@ header {
 
 section {
 	padding: 6rem 0;
+
+	&:nth-of-type(even) {
+		background-color: @section-color;
+	}
 }
 
 .intro {

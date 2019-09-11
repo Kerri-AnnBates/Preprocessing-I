@@ -175,6 +175,9 @@ h3 {
 a {
   text-decoration: none;
 }
+table {
+  width: 100%;
+}
 .container {
   margin: auto;
   width: 100%;
@@ -223,6 +226,9 @@ header a {
 }
 section {
   padding: 6rem 0;
+}
+section:nth-of-type(even) {
+  background-color: #DCDFE5;
 }
 .intro .img-container {
   width: 100%;
