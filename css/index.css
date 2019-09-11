@@ -175,9 +175,6 @@ h3 {
 a {
   text-decoration: none;
 }
-table {
-  width: 100%;
-}
 .container {
   margin: auto;
   width: 100%;
@@ -299,4 +296,27 @@ section:nth-of-type(even) {
     align-items: center;
     justify-content: space-between;
   }
+}
+.work-history table {
+  width: 100%;
+}
+.work-history table thead {
+  font-weight: bold;
+  text-align: left;
+}
+.work-history table tbody tr:nth-of-type(odd) {
+  background-color: #ede6e1;
+}
+.work-history table tr {
+  border: 2px solid #977666;
+}
+.work-history table td,
+.work-history table th {
+  padding: 1.5rem 1rem;
+}
+footer {
+  background-color: #414A54;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
 }

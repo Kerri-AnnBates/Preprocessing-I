@@ -153,6 +153,7 @@ body {
 @secondary-color: #838C97;
 @font-color: #565657;
 @img-border-color: #977666;
+@light-brown: #ede6e1;
 @main-border-color: #838C97;
 @section-color: #DCDFE5;
 
@@ -203,10 +204,6 @@ h3 {
 
 a {
 	text-decoration: none;
-}
-
-table {
-	width: 100%;
 }
 
 .container {
@@ -330,3 +327,33 @@ section {
 		justify-content: space-between;
 	} // End of .my-profile 768px breakpoint.
 } // End of .my-profile
+
+.work-history {
+	table {
+		width: 100%;
+
+		thead {
+			font-weight: bold;
+			text-align: left;
+		}
+
+		tbody tr:nth-of-type(odd) {
+			background-color: @light-brown;
+		}
+
+		tr {
+			border: 2px solid @img-border-color;
+		}
+
+		td, th {
+			padding: 1.5rem 1rem;
+		}
+	} // End of table
+} // End of .work-history
+
+footer {
+	background-color: @main-color;
+	text-align: center;
+	color: #fff;
+	padding: 2rem;
+}
