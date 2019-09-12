@@ -1,1 +1,333 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.link-border {
+  border: 2px solid #fff;
+}
+.fancy-image-border {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #977666;
+  overflow: visible;
+  z-index: -1;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #414A54;
+}
+.container {
+  margin: auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 80%;
+  }
+}
+header {
+  background: #414A54;
+  padding: 2rem 0;
+}
+header .main-navigation {
+  width: 60%;
+  margin: auto;
+}
+header .main-navigation li {
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  header .main-navigation li {
+    margin-bottom: 0;
+    width: 20%;
+  }
+}
+@media (min-width: 768px) {
+  header .main-navigation {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+header a {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+}
+header a:hover {
+  background-color: #fff;
+  color: #838C97;
+}
+section {
+  padding: 6rem 0;
+}
+section:nth-of-type(even) {
+  background-color: #DCDFE5;
+}
+.intro .img-container {
+  width: 80%;
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.intro .img-container:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #977666;
+  overflow: visible;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .intro .img-container {
+    max-width: 40%;
+    margin: 0;
+  }
+}
+.intro img {
+  width: 100%;
+}
+.intro .title {
+  padding: 5rem 2rem;
+  background-color: #838C97;
+  color: #fefefe;
+}
+@media (min-width: 768px) {
+  .intro .title {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .intro {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+}
+.my-profile article {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .my-profile article {
+    width: 45%;
+  }
+}
+.my-profile .skills {
+  border: 2px solid #838C97;
+  border-bottom: none;
+}
+.my-profile .skills li {
+  border-bottom: 2px solid #838C97;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .my-profile .skills {
+    width: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .my-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.work-history table {
+  width: 100%;
+}
+.work-history table thead {
+  font-weight: bold;
+  text-align: left;
+}
+.work-history table tbody tr:nth-of-type(odd) {
+  background-color: #ede6e1;
+}
+.work-history table tr {
+  border: 2px solid #977666;
+}
+.work-history table td,
+.work-history table th {
+  padding: 1.5rem 1rem;
+}
+.contact h3 {
+  margin-top: 2rem;
+}
+footer {
+  background-color: #414A54;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
